@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="styles.css" />
+        <script src="app.js" defer></script>
+        <title>JS Weather App</title>
+    </head>
+    <body>
+        <div class="location">
+            <div class="search-section">
+                <form action="">
+                    <input
+                        type="text"
+                        search="search"
+                        id="search"
+                        placeholder="city, state here"
+                    />
+                </form>
+                <button
+                    class="btn"
+                    type="submit"
+                    id="search-btn"
+                    onclick="search(event)"
+                    disabled
+                >
+                    Search
+                </button>
+            </div>
+            <h1 class="location-timezone">Timezone</h1>
+            <p class="icon">icon</p>
+        </div>
+        <div class="temp">
+            <div class="degree-section">
+                <h2 class="temp-degree">22</h2>
+                <span>F</span>
+            </div>
+            <div class="temp-desc">fucking cold</div>
+        </div>
+    </body>
+</html>
